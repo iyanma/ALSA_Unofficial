@@ -65,6 +65,7 @@ public class JourneysAdapter extends ArrayAdapter<Journey> {
         } else {
             viewHolder = (JourneyHolder) convertView.getTag();
             viewHolder.more.setVisibility(View.GONE); // This is necessary
+            viewHolder.viewMore.setText(R.string.view_more);
         }
 
         Journey journey = getItem(position);
@@ -85,17 +86,13 @@ public class JourneysAdapter extends ArrayAdapter<Journey> {
         viewHolder.viewMore.setOnClickListener(v -> {
             if (viewHolder.more.getVisibility() == View.GONE) {
                 viewHolder.more.setVisibility(View.VISIBLE);
-                viewHolder.viewMore.setText(
-                        getContext().getResources().getText(R.string.view_less)
-                );
+                viewHolder.viewMore.setText(R.string.view_less);
                 if (viewHolder.fares.getChildCount()==0) {
                     fillFares(journey.getFares(), viewHolder.fares);
                 }
             } else {
                 viewHolder.more.setVisibility(View.GONE);
-                viewHolder.viewMore.setText(
-                        getContext().getResources().getText(R.string.view_more)
-                );
+                viewHolder.viewMore.setText(R.string.view_more);
             }
         });
 
