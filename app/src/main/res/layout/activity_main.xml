@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    tools:context=".Activities.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <Button
+            android:id="@+id/origin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/departure_point"
+
+            style="@style/CustomButton" />
+
+        <Button
+            android:id="@+id/destiny"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/destination_point"
+
+            style="@style/CustomButton"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/departure_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/departure_date"
+
+                style="@style/CustomButton"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/view_more_settings"
+            style="@style/CustomButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:text="@string/view_more" />
+
+        <LinearLayout
+            android:id="@+id/more_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/buttons"
+                android:text="@string/adults" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <ImageButton
+                    android:id="@+id/less_passenger_t1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0"
+                    android:src="@drawable/take"
+                    android:background="@drawable/button_background"
+                    android:importantForAccessibility="no" />
+
+                <EditText
+                    android:id="@+id/passenger_t1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:background="@drawable/manual_counter_background"
+                    android:text="1"
+                    android:hint="@string/adults"
+                    android:textColor="@color/buttons"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:ems="10"
+                    android:inputType="number"
+                    tools:ignore="HardcodedText"
+                    android:autofillHints="" />
+
+                <ImageButton
+                    android:id="@+id/more_passenger_t1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:src="@drawable/add"
+                    android:background="@drawable/button_background"
+                    android:importantForAccessibility="no" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/buttons"
+                android:text="@string/kids" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <ImageButton
+                    android:id="@+id/less_passenger_t2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0"
+                    android:src="@drawable/take"
+                    android:background="@drawable/button_background"
+                    android:importantForAccessibility="no" />
+
+                <EditText
+                    android:id="@+id/passenger_t2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:background="@drawable/manual_counter_background"
+                    android:text="0"
+                    android:hint="@string/kids"
+                    android:textColor="@color/buttons"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:ems="10"
+                    android:inputType="number"
+                    tools:ignore="HardcodedText"
+                    android:autofillHints="" />
+
+                <ImageButton
+                    android:id="@+id/more_passenger_t2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:src="@drawable/add"
+                    android:background="@drawable/button_background"
+                    android:importantForAccessibility="no" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/buttons"
+                android:text="@string/babies" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <ImageButton
+                    android:id="@+id/less_passenger_t3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0"
+                    android:src="@drawable/take"
+                    android:background="@drawable/button_background"
+                    android:importantForAccessibility="no" />
+
+                <EditText
+                    android:id="@+id/passenger_t3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:background="@drawable/manual_counter_background"
+                    android:text="0"
+                    android:hint="@string/babies"
+                    android:textColor="@color/buttons"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:ems="10"
+                    android:inputType="number"
+                    tools:ignore="HardcodedText"
+                    android:autofillHints="" />
+
+                <ImageButton
+                    android:id="@+id/more_passenger_t3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:src="@drawable/add"
+                    android:background="@drawable/button_background"
+                    android:importantForAccessibility="no" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/buttons"
+                android:text="@string/youths" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <ImageButton
+                    android:id="@+id/less_passenger_t4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0"
+                    android:src="@drawable/take"
+                    android:background="@drawable/button_background"
+                    android:importantForAccessibility="no" />
+
+                <EditText
+                    android:id="@+id/passenger_t4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:background="@drawable/manual_counter_background"
+                    android:text="0"
+                    android:hint="@string/babies"
+                    android:textColor="@color/buttons"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:ems="10"
+                    android:inputType="number"
+                    tools:ignore="HardcodedText"
+                    android:autofillHints="" />
+
+                <ImageButton
+                    android:id="@+id/more_passenger_t4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:src="@drawable/add"
+                    android:background="@drawable/button_background"
+                    android:importantForAccessibility="no" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/buttons"
+                android:text="@string/elders" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <ImageButton
+                    android:id="@+id/less_passenger_t5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0"
+                    android:src="@drawable/take"
+                    android:background="@drawable/button_background"
+                    android:importantForAccessibility="no" />
+
+                <EditText
+                    android:id="@+id/passenger_t5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:background="@drawable/manual_counter_background"
+                    android:text="0"
+                    android:hint="@string/babies"
+                    android:textColor="@color/buttons"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:ems="10"
+                    android:inputType="number"
+                    tools:ignore="HardcodedText"
+                    android:autofillHints="" />
+
+                <ImageButton
+                    android:id="@+id/more_passenger_t5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:src="@drawable/add"
+                    android:background="@drawable/button_background"
+                    android:importantForAccessibility="no" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0"
+            android:text="@string/search"
+
+            style="@style/CustomButton"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center" >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fare_name"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/labels"
+            android:hint="@string/type"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/fare_type_description"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/labels"
+            android:layout_marginTop="5dp"
+            android:hint="@string/description" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fare_price"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/labels"
+            android:gravity="center_vertical|fill_vertical|end"
+            android:hint="@string/price" />
+    </LinearLayout>
+</LinearLayout>

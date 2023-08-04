@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">ALSA Unofficial</string>
+    <string name="search">Search</string>
+    <string name="departure_date">Departure date</string>
+    <string name="destination_point">Destination point</string>
+    <string name="departure_point">Departure point</string>
+    <string name="description">Description</string>
+    <string name="type">Type</string>
+    <string name="price">Price: %.02f€</string>
+    <string name="arrival_time">Arrival time</string>
+    <string name="stops">Stops</string>
+    <string name="time">Time</string>
+    <string name="destiny">Destiny</string>
+    <string name="province_and_country">Province and country</string>
+    <string name="view_more">View More</string>
+    <string name="view_less">View Less</string>
+    <string name="please_choose_a_destination_point">Please, choose a destination point</string>
+    <string name="please_set_the_departure_date">Please, set the departure date</string>
+    <string name="please_choose_a_departure_point">Please, choose a departure point</string>
+    <string name="choose_a_date">Choose a date</string>
+    <string name="missing_data">Missing data</string>
+    <string name="duration_s">Duration: %sh</string>
+    <string name="stops_s">Stops: %s</string>
+    <string name="departure_time">Departure time</string>
+    <string name="search_stations">Search stations</string>
+    <string name="go_back">Go back</string>
+    <string name="no_journeys">There are currently no journeys for this route.</string>
+    <string name="adults">Adults</string>
+    <string name="kids">Kids</string>
+    <string name="babies">Babies</string>
+    <string name="youths">Youths</string>
+    <string name="elders">Elders</string>
+    <string name="no_customers">You need to set up at least one customer.</string>
+</resources>

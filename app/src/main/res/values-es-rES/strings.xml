@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ALSA Unofficial</string>
+    <string name="search">Buscar</string>
+    <string name="departure_date">Fecha de ida</string>
+    <string name="destination_point">Destino</string>
+    <string name="departure_point">Origen</string>
+    <string name="description">Descripción</string>
+    <string name="type">Tipo</string>
+    <string name="price">Precio: %.02f€</string>
+    <string name="arrival_time">Hora de llegada</string>
+    <string name="stops">Paradas</string>
+    <string name="time">Duración</string>
+    <string name="destiny">Destino</string>
+    <string name="province_and_country">Provincia y país</string>
+    <string name="view_more">Ver más</string>
+    <string name="view_less">Ver menos</string>
+    <string name="please_choose_a_departure_point">Por favor, elige un lugar de origen</string>
+    <string name="please_choose_a_destination_point">Por favor, elige un lugar de destino</string>
+    <string name="please_set_the_departure_date">Por favor, establece la fecha de ida</string>
+    <string name="choose_a_date">Elige una fecha</string>
+    <string name="missing_data">Faltan datos</string>
+    <string name="duration_s">Duración: %sh</string>
+    <string name="stops_s">Paradas: %s</string>
+    <string name="departure_time">Hora de salida</string>
+    <string name="search_stations">Buscar estaciones</string>
+    <string name="go_back">Volver</string>
+    <string name="no_journeys">
+        Ahora mismo no hay viajes para esta ruta.
+    </string>
+    <string name="adults">Adultos</string>
+    <string name="kids">Niños</string>
+    <string name="babies">Bebés</string>
+    <string name="youths">Jóvenes</string>
+    <string name="elders">Mayores</string>
+    <string name="no_customers">Necesitas esblecer por lo menos un pasajero.</string>
+</resources>

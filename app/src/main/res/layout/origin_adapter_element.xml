@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/list_element" >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/destiny"
+        android:textColor="@color/labels"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textIsSelectable="false" />
+
+    <TextView
+        android:id="@+id/province_country_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="@string/province_and_country"
+        android:textColor="@color/labels"
+        android:textIsSelectable="false" />
+</LinearLayout>
