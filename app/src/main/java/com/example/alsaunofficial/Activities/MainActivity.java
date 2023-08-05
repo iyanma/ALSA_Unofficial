@@ -126,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
 
             paramsJourney = (Journey) savedInstanceState
                     .getSerializable(PARAMS_JOURNEY);
-            passengers = (int[]) savedInstanceState.getIntArray(PASSENGERS);
+            passengers = savedInstanceState.getIntArray(PASSENGERS);
 
             assert paramsJourney != null;
             setDepartureDate.setText(paramsJourney.getDepartureDate());
