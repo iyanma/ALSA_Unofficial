@@ -81,15 +81,12 @@ public class JourneysAdapter extends ArrayAdapter<Journey> {
                 R.string.duration_s,
                 journey.getTravelTime())
         );
-        Log.i(TAG,journey.getTravelTime());
+        fillFares(journey.getFares(), viewHolder.fares);
 
         viewHolder.viewMore.setOnClickListener(v -> {
             if (viewHolder.more.getVisibility() == View.GONE) {
                 viewHolder.more.setVisibility(View.VISIBLE);
                 viewHolder.viewMore.setText(R.string.view_less);
-                if (viewHolder.fares.getChildCount()==0) {
-                    fillFares(journey.getFares(), viewHolder.fares);
-                }
             } else {
                 viewHolder.more.setVisibility(View.GONE);
                 viewHolder.viewMore.setText(R.string.view_more);
@@ -112,22 +109,21 @@ public class JourneysAdapter extends ArrayAdapter<Journey> {
     }
 
     private void fillFares(List<Fare> fares, ViewGroup parent) {
-        for (Fare fare: fares) {
+        parent.removeAllViews();
+        FareHolder fareHolder = new FareHolder();
+
+        Log.i(TAG, "Fare count:" + fares.size());
+
+        for (Fare fare : fares) {
+            Log.i(TAG, "Fare: " + fare.getFareName());
+
             View fareView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.fares_adapter_element,parent,false
+                    R.layout.fares_adapter_element, parent, false
             );
-            FareHolder fareHolder;
 
-            if (parent.getTag()==null) {
-                fareHolder = new FareHolder();
-                fareHolder.fareName = fareView.findViewById(R.id.fare_name);
-                fareHolder.fareTypeDescription = fareView.findViewById(R.id.fare_type_description);
-                fareHolder.farePrice = fareView.findViewById(R.id.fare_price);
-
-                parent.setTag(fareHolder);
-            } else {
-                fareHolder = (FareHolder) parent.getTag();
-            }
+            fareHolder.fareName = fareView.findViewById(R.id.fare_name);
+            fareHolder.fareTypeDescription = fareView.findViewById(R.id.fare_type_description);
+            fareHolder.farePrice = fareView.findViewById(R.id.fare_price);
 
             fareHolder.fareName.setText(fare.getFareName());
             fareHolder.fareTypeDescription.setText(fare.getFareTypeDescription());
@@ -138,5 +134,4 @@ public class JourneysAdapter extends ArrayAdapter<Journey> {
             parent.addView(fareView);
         }
     }
-
 }
