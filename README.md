@@ -1,3 +1,3 @@
 # ALSA_Unofficial
 
-This a simple application to check out ALSA bus schedules.
+This is a simple application to check out ALSA bus schedules.
